@@ -57,7 +57,6 @@ d= exploded
 #print (d[1])
 
 #[5]
-
 e= minimesh= []
 for i in range (len(d)):
     result= d[i].Duplicate()
@@ -67,12 +66,13 @@ for i in range (len(d)):
 #print type(e)
 f=[]
 for i in range (len(e)):
-     smol= e[i].Scale(c[i]*0.75)
+     if i%2==0:
+         smol= e[i].Scale(c[i]*0.75)
+     #topo= e[i].TopolgyEdges
      #smol2= smol.Scale(b[i])
      f.append(smol)
         
-  
-print (f)
+#print (f)
 
 
 """
@@ -81,6 +81,7 @@ if b%2==0:
     for i in range (len(c)):
     if c[i]%2==0:
 
+Whats up with this: https://developer.rhino3d.com/api/RhinoCommon/html/M_Rhino_Geometry_Transform_Scale_1.htm
 f=[]
 for i in e:
     trans= i.Scale(b[i])
