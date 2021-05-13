@@ -64,10 +64,15 @@ for i in range (len(d)):
     #print (result)
     e.append(result)
 
-#print (e)
+print type(e)
 
+f= e[0].Scale(0.5)
+
+"""
+can use if statement for relation with sun vector
 
 f=[]
 for i in e:
     trans= i.Scale(b[i])
     f.append(trans)
+"""
