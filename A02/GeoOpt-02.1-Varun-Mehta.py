@@ -64,10 +64,10 @@ for i in range (len(d)):
     #print (result)
     e.append(result)
 
-print (e)
+#print (e)
 
 
 f=[]
 for i in e:
-    trans= i.Scale(0.5)
+    trans= i.Scale(b[i])
     f.append(trans)
