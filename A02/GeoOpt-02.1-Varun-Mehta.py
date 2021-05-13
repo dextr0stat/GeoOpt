@@ -64,15 +64,28 @@ for i in range (len(d)):
     #print (result)
     e.append(result)
 
-print type(e)
+#print type(e)
+f=[]
+for i in range (len(e)):
+     smol= e[i].Scale(c[i]*0.75)
+     #smol2= smol.Scale(b[i])
+     f.append(smol)
+        
+  
+print (f)
 
-f= e[0].Scale(0.5)
 
 """
 can use if statement for relation with sun vector
+if b%2==0:
+    for i in range (len(c)):
+    if c[i]%2==0:
 
 f=[]
 for i in e:
     trans= i.Scale(b[i])
     f.append(trans)
 """
+
+
+
