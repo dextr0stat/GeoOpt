@@ -54,10 +54,20 @@ for i in range (NewMesh.Faces.Count):
 
 d= exploded
 
+#print (d[1])
 
 #[5]
-trans= []
-for i in range (len(d)):
-    result= i.Transform
 
-trans.append(result)
+e= minimesh= []
+for i in range (len(d)):
+    result= d[i].Duplicate()
+    #print (result)
+    e.append(result)
+
+print (e)
+
+
+f=[]
+for i in e:
+    trans= i.Scale(0.5)
+    f.append(trans)
