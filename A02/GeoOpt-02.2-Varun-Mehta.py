@@ -22,7 +22,7 @@ import ghpythonlib.components as ghc
 origin=rg.Point3d(0,0,0)
 a= sphere= rg.Sphere(origin,1)
 
-b = point= a.PointAt(math.pi, 2*math.pi)
+b = point= a.PointAt(x*math.pi, y*math.pi)
 
 #c1 = rs.CreateVector(b) cross check this part
 c = rg.Vector3d.Negate(b-origin)
